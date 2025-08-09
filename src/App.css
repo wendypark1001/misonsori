@@ -118,4 +118,40 @@ a {
 
 @media (max-width: 800px) {
   .hero { grid-template-columns: 1fr; }
+  .navbar-inner { flex-wrap: wrap; }
+  .menu-toggle { display: inline-flex; }
+  .nav-links { display: none; width: 100%; }
+  .nav-links.open { display: flex; flex-direction: column; padding-top: 8px; }
+}
+
+/* Carousel */
+.carousel img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.carousel-caption {
+  margin-top: 8px;
+  color: #4a3f2d;
+}
+.carousel-controls {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.carousel-indicator {
+  color: #5b4f3b;
+}
+
+/* Mobile toggle default hidden */
+.menu-toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  min-width: 36px;
+  border-radius: 6px;
+  border: 1px solid #eadfcd;
+  background: #fff;
 }

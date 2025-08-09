@@ -1,4 +1,7 @@
+import { useSeo } from '../hooks/useSeo';
+
 export default function Background() {
+  useSeo({ title: '이력', description: '학력, 공연 경력, 사사, 국문학 박사 논문 연구 소개' });
   return (
     <div>
       <h2>이력 및 학문적 배경</h2>

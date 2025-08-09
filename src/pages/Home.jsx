@@ -1,4 +1,12 @@
+import Carousel from '../components/Carousel';
+import { slides } from '../data/gallery';
+import { useSeo } from '../hooks/useSeo';
+
 export default function Home() {
+  useSeo({
+    title: '홈',
+    description: '김미선 지부장의 판소리 교육과 국문학 연구를 연결하는 미손소리 공식 홈페이지',
+  });
   return (
     <div>
       <section className="hero">
@@ -7,10 +15,7 @@ export default function Home() {
           <p>김미선 지부장의 교육 철학과 연구 비전을 바탕으로, 이론과 실기를 연결하는 배움의 장을 엽니다.</p>
           <a className="button" href="/education">교육 콘텐츠 보러가기</a>
         </div>
-        <div className="card">
-          <strong>슬라이드 쇼</strong>
-          <p>주요 공연 장면(적벽가, 흥보가 완창 등) 사진/영상이 들어갈 영역</p>
-        </div>
+        <Carousel slides={slides} />
       </section>
 
       <section className="section grid">

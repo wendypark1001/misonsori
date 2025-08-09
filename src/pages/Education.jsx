@@ -1,4 +1,7 @@
+import { useSeo } from '../hooks/useSeo';
+
 export default function Education() {
+  useSeo({ title: '교육', description: '온라인 강의, 워크숍, 판소리 다섯 마당 학습 자료와 인터랙티브 실습' });
   return (
     <div>
       <h2>판소리 교육 콘텐츠</h2>

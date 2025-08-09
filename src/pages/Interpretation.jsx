@@ -1,4 +1,7 @@
+import { useSeo } from '../hooks/useSeo';
+
 export default function Interpretation() {
+  useSeo({ title: '문화 해석', description: '판소리와 국문학의 연계를 다루는 에세이와 작품 분석' });
   return (
     <div>
       <h2>문화적 해석</h2>
